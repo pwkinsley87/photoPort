@@ -111,7 +111,7 @@ const PhotoList = ({ category }) => {
 
   const toggleModal = (image, i) => {
     setCurrentPhoto({...image, index: 1})
-    setIsModalOpen(true);
+    setIsModalOpen(!isModalOpen);
   }
 
   return (
