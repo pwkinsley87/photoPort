@@ -22,7 +22,7 @@ function Nav(props) {
             </h2>
             <nav>
                 <ul className="flex-row">
-                    <li className="mx-2">
+                    <li className={`mx-2 ${contactSelected && 'navActive'}`} key={category.name}>
                         <a data-testid="about" href="#about">
                             About Me
                         </a>
